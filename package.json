@@ -1,0 +1,29 @@
+{
+  "name": "vue2-best-practices",
+  "version": "0.1.0",
+  "description": "Agent skills for Vue 2 development",
+  "main": "index.js",
+  "scripts": {
+    "dev": "echo 'Vue2-best-practices is a documentation project. No dev server needed.'",
+    "test": "echo 'No tests configured yet'",
+    "lint": "echo 'No linter configured yet'"
+  },
+  "keywords": [
+    "vue",
+    "vue2",
+    "best-practices",
+    "ai",
+    "skills",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vue2-best-practices"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/vue2-best-practices/issues"
+  },
+  "homepage": "https://github.com/your-username/vue2-best-practices#readme"
+}
