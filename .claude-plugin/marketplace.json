@@ -1,0 +1,52 @@
+{
+  "name": "vue2-best-practices",
+  "description": "Agent skills for Vue 2 development",
+  "version": "1.1.0",
+  "skills": [
+    {
+      "name": "vue2-best-practices",
+      "description": "Core Vue 2 patterns, reactivity, lifecycle hooks, common gotchas",
+      "path": "skills/vue2-best-practices"
+    },
+    {
+      "name": "vue2-options-api-best-practices",
+      "description": "Options API (data, methods, computed) - this context, lifecycle, proper Options API usage",
+      "path": "skills/vue2-options-api-best-practices"
+    },
+    {
+      "name": "vue2-components-best-practices",
+      "description": "Component design - Component communication, props, events, slots",
+      "path": "skills/vue2-components-best-practices"
+    },
+    {
+      "name": "vue2-router-best-practices",
+      "description": "Vue Router 3 - Navigation guards, route params, route-component lifecycle",
+      "path": "skills/vue2-router-best-practices"
+    },
+    {
+      "name": "vue2-vuex-best-practices",
+      "description": "Vuex for state management - Store setup, mutations, actions, getters, modules",
+      "path": "skills/vue2-vuex-best-practices"
+    },
+    {
+      "name": "vue2-mixins-best-practices",
+      "description": "Mixins usage - Mixin patterns, conflicts resolution, composition",
+      "path": "skills/vue2-mixins-best-practices"
+    },
+    {
+      "name": "vue2-directives-best-practices",
+      "description": "Custom directives - Directive creation, hooks, argument modifiers",
+      "path": "skills/vue2-directives-best-practices"
+    },
+    {
+      "name": "vue2-testing-best-practices",
+      "description": "Writing component or E2E tests - Jest, Vue Test Utils, Nightwatch",
+      "path": "skills/vue2-testing-best-practices"
+    },
+    {
+      "name": "vue2-debug-guides",
+      "description": "Debugging Vue 2 issues - Runtime errors, warnings, Vue DevTools usage",
+      "path": "skills/vue2-debug-guides"
+    }
+  ]
+}
