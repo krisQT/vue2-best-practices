@@ -1,3 +1,12 @@
+---
+name: vue2-testing-best-practices
+description: Vue 2 testing best practices with Jest and Vue Test Utils including component testing, Vuex store testing, Vue Router testing, mocking, and E2E testing patterns.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Testing Best Practices
 
 ## When to Use

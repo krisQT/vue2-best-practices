@@ -1,3 +1,12 @@
+---
+name: vue2-mixins-best-practices
+description: Vue 2 mixins patterns for code sharing between components including mixin creation, option merging strategies, conflict resolution, and common mixin patterns.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Mixins Best Practices
 
 ## When to Use

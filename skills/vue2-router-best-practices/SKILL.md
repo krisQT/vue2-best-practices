@@ -1,3 +1,12 @@
+---
+name: vue2-router-best-practices
+description: Vue Router 3 patterns for Vue 2 including navigation guards (beforeRouteEnter, beforeEach), route params, queries, nested routes, lazy loading, and programmatic navigation.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue Router 3 Best Practices
 
 ## When to Use

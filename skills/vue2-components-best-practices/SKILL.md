@@ -1,3 +1,12 @@
+---
+name: vue2-components-best-practices
+description: Vue 2 component design patterns, component communication (props, events, v-model), slots (including scoped slots), provide/inject, and reusable component architecture.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Components Best Practices
 
 ## When to Use

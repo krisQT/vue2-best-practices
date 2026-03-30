@@ -1,3 +1,12 @@
+---
+name: vue2-best-practices
+description: Core Vue 2 patterns, reactivity system, Options API, lifecycle hooks, and common gotchas. Use for Vue 2 projects, Options API implementation, Vue 2 component design, and legacy Vue.js applications.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Best Practices
 
 ## When to Use

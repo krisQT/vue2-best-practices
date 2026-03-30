@@ -1,3 +1,12 @@
+---
+name: vue2-directives-best-practices
+description: Vue 2 custom directives including directive hooks (bind, inserted, update, unbind), directive arguments, modifiers, functional directives, and DOM manipulation patterns.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Directives Best Practices
 
 ## When to Use

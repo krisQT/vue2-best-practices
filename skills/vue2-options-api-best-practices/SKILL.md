@@ -1,3 +1,12 @@
+---
+name: vue2-options-api-best-practices
+description: Deep dive into Vue 2 Options API including data(), methods, computed, watch, and this context. Essential for proper component structure and lifecycle management.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Options API Best Practices
 
 ## When to Use

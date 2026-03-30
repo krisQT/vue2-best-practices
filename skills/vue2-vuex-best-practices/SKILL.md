@@ -1,3 +1,12 @@
+---
+name: vue2-vuex-best-practices
+description: Vuex state management patterns for Vue 2 including store setup, mutations, actions, getters, modules, namespaced stores, and Vuex plugins.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vuex Best Practices
 
 ## When to Use

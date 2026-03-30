@@ -1,3 +1,12 @@
+---
+name: vue2-debug-guides
+description: Vue 2 debugging guides including common Vue 2 issues, reactivity problems, Vue DevTools usage, error message interpretation, and performance debugging.
+license: MIT
+metadata:
+  author: github.com/krisQT
+  version: "1.1.0"
+---
+
 # Vue 2 Debug Guides
 
 ## When to Use
