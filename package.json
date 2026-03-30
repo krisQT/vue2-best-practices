@@ -20,10 +20,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/vue2-best-practices"
+    "url": "https://github.com/krisQT/vue2-best-practices"
   },
   "bugs": {
-    "url": "https://github.com/your-username/vue2-best-practices/issues"
+    "url": "https://github.com/krisQT/vue2-best-practices/issues"
   },
-  "homepage": "https://github.com/your-username/vue2-best-practices#readme"
+  "homepage": "https://github.com/krisQT/vue2-best-practices#readme"
 }

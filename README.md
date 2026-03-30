@@ -6,19 +6,66 @@ Agent skills for Vue 2 development.
 
 This repository is an early experiment in creating specialized skills for AI agents to enhance Vue 2 development. Skills are derived from real-world issues and patterns commonly found in Vue 2 legacy projects.
 
+## ⚠️ Prerequisites
+
+- **Node.js**: v16.0.0 or higher recommended (for CLI installation)
+- **Git**: Required for cloning
+
+> **Note**: If you're using an older Node.js version (like v14), please use the **Local Development Mode** method below instead of the `npx` command.
+
 ## Installation
 
-Using npm:
+### Method 1: Local Development Mode (Recommended - No Node.js version issues)
+
+This method copies the skills directly to your project without using the `skills` CLI tool.
+
+**Step 1**: Clone or download this repository
 
 ```bash
-npx skills add your-username/vue2-best-practices
+# Option A: Clone to a separate directory
+git clone https://github.com/krisQT/vue2-best-practices.git ~/vue2-skills
+
+# Option B: Download and extract ZIP from GitHub
+# Visit: https://github.com/krisQT/vue2-best-practices/releases
 ```
 
-Using Claude Code Marketplace:
+**Step 2**: Copy skills to your project
+
+```bash
+# In your Vue 2 project root directory
+mkdir -p .skills
+
+# Copy the skills folder
+cp -r ~/vue2-skills/skills .skills/vue2-best-practices
+
+# Or create a symlink (changes sync automatically)
+ln -s ~/vue2-skills/skills .skills/vue2-best-practices
+```
+
+**Step 3**: Verify installation
+
+```bash
+ls -la .skills/vue2-best-practices/
+# You should see all 9 skill folders
+```
+
+### Method 2: Using npm (Requires Node.js 16+)
+
+If you have Node.js v16 or higher, you can use the skills CLI:
+
+```bash
+npx skills add krisQT/vue2-best-practices
+```
+
+**If you encounter `SyntaxError: Unexpected token '{'` error**, it means your Node.js version is too old. Please use **Method 1** instead.
+
+### Method 3: Claude Code Marketplace
+
+For Claude Code users:
 
 ```bash
 # Add marketplace
-/plugin marketplace add your-username/vue2-best-practices
+/plugin marketplace add krisQT/vue2-best-practices
 
 # Install all skills at once
 /plugin install vue2-skills-bundle@vue2-best-practices
@@ -32,13 +79,41 @@ Using Claude Code Marketplace:
 
 ## Usage
 
-For most reliable results, prefix your prompt with `use vue2 skill`:
+### For Trae IDE / Claude Code
+
+**Option A**: Explicit trigger (most reliable)
 
 ```
 Use vue2 skill, <your prompt here>
+
+Example:
+Use vue2 skill, 帮我创建一个用户列表组件
 ```
 
-This explicitly triggers the skill and ensures the AI follows the documented patterns. Without the prefix, skill triggering may be inconsistent depending on how closely your prompt matches the skill's description keywords.
+**Option B**: Automatic detection
+
+Trae will automatically detect Vue 2 context based on keywords in your prompt:
+
+- "Vue 2" → vue2-best-practices
+- "Vue Router" → vue2-router-best-practices
+- "Vuex" → vue2-vuex-best-practices
+- And more...
+
+### Example Prompts
+
+```
+# Create a Vue 2 component
+Use vue2 skill, create a user profile component with props and events
+
+# Debug reactivity issues
+Use vue2 skill, why isn't my array update triggering re-render?
+
+# Setup Vuex
+Use vue2 skill, create an authentication module with Vuex
+
+# Route guards
+Use vue2 skill, implement a login guard for routes
+```
 
 ## Available Skills
 
@@ -62,7 +137,7 @@ Demo - Todo App
 
 Prompt:
 ```
-create a todo app with Vue 2
+Use vue2 skill, create a todo app with Vue 2
 ```
 
 Changes after using skill:
@@ -78,7 +153,7 @@ Demo - User Authentication Store
 
 Prompt:
 ```
-create a user authentication store with Vuex
+Use vue2 skill, create a user authentication store with Vuex
 ```
 
 Changes after using skill:
@@ -87,6 +162,13 @@ Changes after using skill:
 - Correct mutation and action patterns
 - State hydration from localStorage
 - Proper getters usage
+
+## Documentation
+
+- [USAGE_GUIDE.md](./USAGE_GUIDE.md) - Detailed usage guide
+- [AGENTS.md](./AGENTS.md) - AI agent guidelines
+- [IMPLEMENTATION.md](./IMPLEMENTATION.md) - Implementation details
+- [CHANGELOG.md](./CHANGELOG.md) - Version history
 
 ## Methodology
 
@@ -111,6 +193,28 @@ A rule is kept only if it enables the model to solve problems it couldn't solve 
 |----------|------------|--------|
 | Fail | Pass | Keep |
 | Pass | Pass | Considered removed |
+
+## Troubleshooting
+
+### Error: `SyntaxError: Unexpected token '{'`
+
+**Cause**: Your Node.js version is too old for the skills CLI.
+
+**Solution**: Use **Method 1: Local Development Mode** instead.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/krisQT/vue2-best-practices.git ~/vue2-skills
+
+# 2. Copy to your project
+cd your-vue2-project
+mkdir -p .skills
+cp -r ~/vue2-skills/skills .skills/vue2-best-practices
+```
+
+### Error: `skills: command not found`
+
+**Solution**: The skills CLI isn't installed globally. This is fine - just use local development mode.
 
 ## Contributing
 

@@ -6,6 +6,33 @@ This document outlines the guidelines and patterns for AI agents working with Vu
 
 Vue2-best-practices is a collection of specialized skills designed to help AI agents understand and work effectively with Vue 2 codebase. Vue 2 has different patterns and APIs compared to Vue 3, making these skills essential for maintaining and developing Vue 2 legacy applications.
 
+**Repository**: https://github.com/krisQT/vue2-best-practices
+
+## Quick Start
+
+### Installation
+
+```bash
+# 方式一：使用 npm（推荐）
+npx skills add krisQT/vue2-best-practices
+
+# 方式二：使用 Claude Code Marketplace
+/plugin marketplace add krisQT/vue2-best-practices
+/plugin install vue2-skills-bundle@vue2-best-practices
+
+# 方式三：本地开发模式
+git clone https://github.com/krisQT/vue2-best-practices.git
+ln -s /path/to/vue2-best-practices/skills /your-project/.skills/vue2-best-practices
+```
+
+### Usage
+
+Prefix your prompt with `use vue2 skill` for best results:
+
+```
+Use vue2 skill, <your prompt here>
+```
+
 ## Core Principles
 
 ### 1. Vue 2 Specific Patterns
